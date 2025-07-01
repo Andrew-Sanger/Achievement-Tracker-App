@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-tY-rh9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_souls_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SHj-ol-Zqc">
+                                <rect key="frame" x="75" y="247" width="450" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SHj-ol-Zqc" secondAttribute="height" multiplier="612:91" id="Msn-47-U0Z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievement Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-TX-qrQ">
+                                <rect key="frame" x="180" y="313" width="240" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="B2d-Ue-oT9"/>
+                                    <constraint firstAttribute="height" constant="20" id="hxW-8Q-oRQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SHj-ol-Zqc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Mh-wo-UME"/>
+                            <constraint firstItem="rbi-tY-rh9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BS2-nx-NaQ"/>
+                            <constraint firstItem="rbi-tY-rh9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Con-gt-ztc"/>
+                            <constraint firstItem="wvf-TX-qrQ" firstAttribute="centerX" secondItem="SHj-ol-Zqc" secondAttribute="centerX" id="NUC-fn-0dI"/>
+                            <constraint firstItem="rbi-tY-rh9" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="OIc-6t-IJT"/>
+                            <constraint firstItem="rbi-tY-rh9" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="eBZ-gJ-Nrd"/>
+                            <constraint firstItem="SHj-ol-Zqc" firstAttribute="width" secondItem="rbi-tY-rh9" secondAttribute="width" multiplier="0.75" id="gDO-BQ-Wrf"/>
+                            <constraint firstItem="SHj-ol-Zqc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="gYg-nd-0Kp"/>
+                            <constraint firstItem="wvf-TX-qrQ" firstAttribute="top" secondItem="SHj-ol-Zqc" secondAttribute="bottom" id="lyR-af-jS8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dark_souls_logo.png" width="612" height="91"/>
+        <image name="launch_screen.jpg" width="640" height="1136"/>
+    </resources>
+</document>
